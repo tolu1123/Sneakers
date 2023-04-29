@@ -24,7 +24,18 @@
             </nav>
             <span>
                 <button>LOG IN</button>
-                <span><i class="fa-solid fa-bars"></i></span>
+                <span class="dropdown">
+                    <a href="#" onclick="myOpen()"><i class="fa-solid fa-bars"></i></a>
+                <div id="open" class="dropdown-content">
+                    <span onclick="myClose()"><i class="fa-solid fa-xmark"></i></span>
+                    <ul>
+                        <li>PRODUCT</li>
+                        <li>ABOUT</li>
+                        <li>CONTACTS</li>
+                    </ul>
+                    <button>LOG IN</button>
+                </div>
+                </span>
             </span>
         </header>
 
@@ -69,22 +80,33 @@
                 </div>
             </div>
             <div class="join">
-                <div class="letter">
-                    <span>A</span>
-                    <span>B</span>
-                </div>
-                <img src="Images/guy (2).png" alt="">
-                <div class="code">
-                    <div class="qr">
-                        <i class="fa-sharp fa-solid fa-qrcode"></i>
+                <div class="innerj">
+                    <div class="letter">
+                        <span>A</span>
+                        <span>B</span>
                     </div>
-                    <div class="us">
-                        <h3>Join us</h3>
-                        <p>Friendly Community</p>
+                    <img src="Images/guy (2).png" alt="">
+                    <div class="code">
+                        <div class="qr">
+                            <i class="fa-sharp fa-solid fa-qrcode"></i>
+                        </div>
+                        <div class="us">
+                            <h3>Join us</h3>
+                            <p>Friendly Community</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function myOpen() {
+            document.getElementById('open').style.display="block"
+        }
+        function myClose() {
+            document.getElementById('open').style.display="none"
+        }
+    </script>
 </body>
 </html>

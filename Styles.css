@@ -37,14 +37,14 @@ header section img {
     height: 40px;
     vertical-align: middle;
 }
-/* nav {
-    vertical-align: text-bottom;
-} */
 nav a {
     text-decoration: none;
     margin: 0 20px;
     font-size: 0.9rem;
-    /* vertical-align: text-bottom; */
+    font-weight: 400;
+}
+nav a:hover {
+    border-bottom: 2px solid var(--blue);
 }
 button {
     padding: 5px 30px;
@@ -54,17 +54,15 @@ button {
     font-weight: 700;
     border-radius: 7px;
 }
+button:hover {
+    border: 1px solid var(--blue);
+    background-color: #fff;
+    color: var(--blue);
+}
 
 div.main {
     display: flex;
     margin-bottom: 45px;
-}
-div.aside {
-    border: inherit;
-    
-}
-div.title {
-    border: inherit;
 }
 div.title h1 {
     font-size: 2rem;
@@ -80,13 +78,7 @@ div.title img.basketball {
     height: 2rem;
 }
 div.foot {
-    /* height: 350px; */
-    /* border: 1px solid; */
     display: flex;
-}
-div.learn, div.shoe, div.join {
-    border: inherit;
-    /* padding: 20px; */
 }
 div.up {
     display: flex;
@@ -146,6 +138,7 @@ div.showplace img {
 }
 div.nike {
     padding: 20px 10px;
+    color: var(--blue);
 }
 div.nike h2 {
     font-size: 1.3rem;
@@ -230,12 +223,60 @@ div.us p {
     nav {
         display: none;
     }
-    button {
+    header > span > button {
         display: none;
     }
     header > span > span {
         display: block;
     }
+
+
+
+    header > span > span > a > i{
+        color: var(--blue);
+        font-size: 1.6rem;
+    }
+    span.dropdown {
+        display: inline-block;
+    }
+    span.dropdown div.dropdown-content {
+        display: none;
+        background-color: #fff;
+        width: min(100vw, 450px);
+        z-index: 999;
+        position: absolute;
+        right: 0;
+        box-shadow: 5px 5px 5px #ccc;
+    }
+    ul {
+        list-style-type: none;
+    }
+    ul li {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+    }
+    ul li:hover {
+        background-color: var(--blue);
+        color: #fff;
+    }
+    ul + button {
+        display: block;
+        margin: 15px auto 15px auto;
+        width: 50%;
+        padding: 10px 0;
+    }
+    ul + button:hover {
+        border: 1px solid var(--blue);
+        background-color: #fff;
+        color: var(--blue);
+    }
+    div.dropdown-content span {
+        margin: 20px;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
 
     div.main {
         /* flex-wrap: wrap; */
@@ -302,6 +343,53 @@ div.us p {
     header > span > span {
         display: block;
     }
+
+    header > span > span > a > i{
+        color: var(--blue);
+        font-size: 1.6rem;
+    }
+    span.dropdown {
+        display: inline-block;
+    }
+    span.dropdown div.dropdown-content {
+        display: none;
+        background-color: #fff;
+        width: min(100vw, 450px);
+        z-index: 999;
+        position: absolute;
+        right: 0;
+        box-shadow: 5px 5px 5px #ccc;
+    }
+    ul {
+        list-style-type: none;
+    }
+    ul li {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+    }
+    ul li:hover {
+        background-color: var(--blue);
+        color: #fff;
+    }
+    ul + button {
+        display: block;
+        margin: 15px auto 15px auto;
+        width: 50%;
+        padding: 10px 0;
+    }
+    ul + button:hover {
+        border: 1px solid var(--blue);
+        background-color: #fff;
+        color: var(--blue);
+    }
+    div.dropdown-content span {
+        margin: 20px;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+
     div.main {
         flex-wrap: wrap;
         flex-direction: row;
